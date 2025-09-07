@@ -1,39 +1,37 @@
 # gzScript
-A language proposal for a domain-specific language for Gazebo models, units, and simulation scripting, as an alternative to xml
 
-Overview
---------
-gzScript is an experimental DSL (domain-specific language) designed to make working with Gazebo Sim easier and more intuitive. 
+*A domain-specific language for Gazebo models, units, and simulation scripting.*
 
-gzScript aims to provide:
+---
 
-* Strongly typed quantities and units (SI-first, safe conversions).
+## Overview
 
-* A clean syntax for describing models, poses, joints, and animations.
+`gzScript` is an experimental DSL (domain-specific language) designed to make working with **Gazebo Harmonic** easier and more intuitive. `gzScript` aims to provide:
 
+* Strongly typed **quantities and units** (SI-first, safe conversions).
+* A clean syntax for describing **models, poses, joints, and animations**.
 * An approachable scripting language for simulation experiments.
-
 * A foundation for higher-level workflows (model design, control, testing).
 
-Why?
-----
-Gazebo is powerful, but SDF and plugin code can be verbose and error-prone.
-gzScript explores whether we can design a friendlier layer on top, without losing rigor.
+---
+
+## Why?
+
+Gazebo is powerful, but **SDF and plugin code** can be verbose and error-prone.
+`gzScript` explores whether we can design a friendlier layer on top, without losing rigor.
 
 Goals:
 
-Reduce boilerplate.
+* Reduce boilerplate.
+* Prevent unit errors.
+* Enable “sketching” of simulation ideas quickly.
+* Stay interoperable with Gazebo ecosystem.
 
-Prevent unit errors.
+---
 
-Enable “sketching” of simulation ideas quickly.
+## Example (concept)
 
-Stay interoperable with Gazebo ecosystem.
-
-Example primitives 
-------------------
 ```
-
 // Declare a unit alias
 mph = :mi/h:;
 
@@ -50,9 +48,36 @@ w:width:  = 0.3:m:;
 theta = 180:deg:;
 phi   = 3.14:rad:;
 ```
-Features (planned)
-- Core principles for units & quantities
-- Parser / grammar draft (Bison/Flex)
-- Interpreter / compiler backend
-- Gazebo integration (generate SDF / send commands)
-- Example models and control scripts
+
+---
+
+## Features (planned)
+
+* [x] Core principles for **units & quantities**
+* [ ] Parser / grammar draft (Bison/Flex)
+* [ ] Interpreter / compiler backend
+* [ ] Gazebo integration (generate SDF / send commands)
+* [ ] Example models and control scripts
+
+---
+
+## Status
+
+**Work in progress.** This project is currently in early design stages.
+Contributions, ideas, and discussions are welcome.
+
+---
+
+## Related Work
+
+* [Gazebo](https://gazebosim.org)
+* [mp-units](https://github.com/mpusz/units)
+* [pqs](https://github.com/kwikius/pqs)
+
+---
+
+## License
+
+TBD (MIT or Apache-2.0 recommended).
+
+---
