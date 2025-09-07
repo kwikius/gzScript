@@ -34,6 +34,7 @@ First things first. To model physical systems legibly requires strongly typed ph
 [pqs](https://github.com/kwikius/pqs), [quan](https://github.com/kwikius/quan-trunk) and [mp-units](https://github.com/mpusz/units), to 
 provide a semantic for representing physical quanties in an expressive way.  
 gzScript provides an opportunity to enshrine physical quantities in the language itself. 
+C++ has the notion of a [user defined literal](https://en.cppreference.com/w/cpp/language/user_literal.html). It is a nice idea, but very limited in practise. in c++ the literal is effectively in the global namespace and units can't be composed due to C++ syntax. in gzScript, units live in their own exclusive semantic space in which the rules of units only can be applied. The unit namespace is enterd and exited using the colon':' as follows :
 
 ```
 // Declare a unit alias
