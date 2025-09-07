@@ -1,24 +1,22 @@
 # gzScript
-A language proposal for a domain-specific language for Gazebo models, units, and simulation scripting., as an alternative to xml
-
-gzScript
-
-A domain-specific language for Gazebo models, units, and simulation scripting.
+A language proposal for a domain-specific language for Gazebo models, units, and simulation scripting, as an alternative to xml
 
 Overview
+--------
+gzScript is an experimental DSL (domain-specific language) designed to make working with Gazebo Sim easier and more intuitive. 
 
-gzScript is an experimental DSL (domain-specific language) designed to make working with Gazebo Harmonic easier and more intuitive. Inspired by OpenSCAD for CAD modeling, gzScript aims to provide:
+gzScript aims to provide:
 
-Strongly typed quantities and units (SI-first, safe conversions).
+* Strongly typed quantities and units (SI-first, safe conversions).
 
-A clean syntax for describing models, poses, joints, and animations.
+* A clean syntax for describing models, poses, joints, and animations.
 
-An approachable scripting language for simulation experiments.
+* An approachable scripting language for simulation experiments.
 
-A foundation for higher-level workflows (model design, control, testing).
+* A foundation for higher-level workflows (model design, control, testing).
 
 Why?
-
+----
 Gazebo is powerful, but SDF and plugin code can be verbose and error-prone.
 gzScript explores whether we can design a friendlier layer on top, without losing rigor.
 
@@ -32,7 +30,8 @@ Enable “sketching” of simulation ideas quickly.
 
 Stay interoperable with Gazebo ecosystem.
 
-Example (concept)
+Example primitives 
+--------------------
 ```
 
 // Declare a unit alias
