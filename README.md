@@ -29,7 +29,11 @@ Goals:
 
 ---
 
-## Example (concept)
+## Physical quantities and units
+First things first. To model physical systems legibly requires strongly typed physical quantities. Work has been ongoing, notably in C++, for example in 
+[pqs](https://github.com/kwikius/pqs), [quan](https://github.com/kwikius/quan-trunk) and [mp-units](https://github.com/mpusz/units), to 
+provide a semantic for representing physical quanties in an expressive way.  
+gzScript provides an opportunity to enshrine physical quantities in the language itself. 
 
 ```
 // Declare a unit alias
