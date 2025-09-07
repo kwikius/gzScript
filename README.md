@@ -37,10 +37,9 @@ gzScript provides an opportunity to enshrine physical quantities in the language
 C++ has the notion of a [user defined literal](https://en.cppreference.com/w/cpp/language/user_literal.html). It is a nice idea, but very limited in practise. in c++ the literal is effectively in the global namespace and units can't be composed due to C++ syntax. in gzScript, units live in their own exclusive semantic space in which the rules of units only can be applied. The unit namespace is enterd and exited using the colon':' as follows :
 
 ```
-// Declare a unit alias
-mph = :mi/h:;
 
-// Quantities
+
+// Quantities lvalues are constant by default
 v = 5:m/s:;
 t = 2:s:;
 d = v * t;      // 10:m:
@@ -49,9 +48,14 @@ d = v * t;      // 10:m:
 h:height: = 1.2:m:;
 w:width:  = 0.3:m:;
 
+// Declare a unit alias
+mph = :mi/h:;
+
 // Angle handling
-theta = 180:deg:;
+var theta = 180:deg:;  // theta can be modified
 phi   = 3.14:rad:;
+
+theta = phi; // angle conversions
 ```
 
 ---
