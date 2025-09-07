@@ -1,6 +1,6 @@
 # gzScript
 
-*A domain-specific language for Gazebo models, units, and simulation scripting.*
+*A domain-specific language for [Gazebo](https://gazebosim.org) models, units, and simulation scripting.*
 
 ---
 
