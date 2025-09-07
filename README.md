@@ -6,7 +6,7 @@
 
 ## Overview
 
-`gzScript` is an experimental DSL (domain-specific language) designed to make working with **Gazebo Harmonic** easier and more intuitive. `gzScript` aims to provide:
+`gzScript` is an experimental DSL (domain-specific language) designed to make working with **[Gazebo](https://gazebosim.org)** easier and more intuitive. `gzScript` aims to provide:
 
 * Strongly typed **quantities and units** (SI-first, safe conversions).
 * A clean syntax for describing **models, poses, joints, and animations**.
