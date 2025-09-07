@@ -31,7 +31,7 @@ Enable “sketching” of simulation ideas quickly.
 Stay interoperable with Gazebo ecosystem.
 
 Example primitives 
---------------------
+------------------
 ```
 
 // Declare a unit alias
